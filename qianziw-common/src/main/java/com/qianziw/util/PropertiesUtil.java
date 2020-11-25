@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.Properties;
 
 /**
- * .properties文件工具类
+ * properties文件工具类
  */
 public class PropertiesUtil {
 
