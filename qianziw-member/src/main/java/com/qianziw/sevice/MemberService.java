@@ -1,8 +1,9 @@
 package com.qianziw.sevice;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -16,11 +17,11 @@ public class MemberService {
     private String serverPort;
     /**
      * 会员服务提供的接口被订单服务调用
-     * @param userid
+     * @param
      * @return
      */
-    @RequestMapping("/user")
-    public String getUser(Integer userid){
+    @PostMapping("/user")
+    public String getUser(@RequestParam Integer userid){
         return "千字文会员 user : " + userid + ",端口号:" + serverPort;
     }
 }
