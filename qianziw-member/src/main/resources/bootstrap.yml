@@ -4,8 +4,8 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 127.0.0.1:8848
+        server-addr: 10.32.19.137:8847,10.32.19.137:8848,10.32.19.137:8849
       config:
-        server-addr: 127.0.0.1:8848
+        server-addr: 10.32.19.137:8847,10.32.19.137:8848,10.32.19.137:8849
         group: DEFAULT_GROUP
         file-extension: yml
